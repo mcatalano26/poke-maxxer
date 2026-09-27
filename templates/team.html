@@ -1,0 +1,75 @@
+{{define "title"}}{{if .Members}}Team · {{end}}{{end}}
+
+{{define "content"}}
+<form method="get" action="/team">
+  <label>Team — one Pokémon per line (commas also work), up to {{.MaxSize}}
+    <textarea name="team" rows="6" required autofocus>{{.Input}}</textarea>
+  </label>
+  {{template "settings" .}}
+  <button type="submit">Analyze team</button>
+</form>
+{{with .Errors}}<section><ul class="error">{{range .}}<li>{{.}}</li>{{end}}</ul></section>{{end}}
+{{if .Members}}
+<section>
+  <h2>Base stats</h2>
+  <table class="grid">
+    <thead>
+      <tr><th>Pokémon</th><th>Types</th><th>HP</th><th>Atk</th><th>Def</th><th>Sp. Atk</th><th>Sp. Def</th><th>Speed</th><th>Total</th></tr>
+    </thead>
+    <tbody>
+      {{range .Members}}
+      <tr>
+        <th>{{.Name}}</th>
+        <td>{{template "types" .Types}}</td>
+        <td>{{.Stats.HP}}</td>
+        <td>{{.Stats.Attack}}</td>
+        <td>{{.Stats.Defense}}</td>
+        <td>{{.Stats.SpAttack}}</td>
+        <td>{{.Stats.SpDefense}}</td>
+        <td>{{.Stats.Speed}}</td>
+        <td><strong>{{.Stats.Total}}</strong></td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</section>
+{{with .Score}}
+<section>
+  <h2>Defensive score: {{printf "%.2f" .Score}}</h2>
+  <p class="hint">DefensiveScore = ResistBreadth − total DefGap. Higher is better. The score can be negative; only comparisons between teams under the same settings mean anything.</p>
+  <table>
+    <tbody>
+      <tr><th>ResistBreadth: attack types at least one member resists or is immune to</th><td>{{.ResistBreadth}} / {{.TypeCount}}</td></tr>
+      <tr><th>Total DefGap: penalty for weaknesses shared by several members</th><td>{{printf "%.2f" .TotalGap}}</td></tr>
+      <tr><th>Uncovered attack types</th><td>{{range .Uncovered}}<span class="type type-{{.}}">{{.}}</span> {{else}}None{{end}}</td></tr>
+    </tbody>
+  </table>
+</section>
+{{end}}
+<section>
+  <h2>Defensive coverage</h2>
+  <p class="hint">Damage multiplier each attacking type deals to each team member. Blank means 1×. DefGap = weak² ÷ (1 + resist + 2 × immune).</p>
+  <table class="grid coverage">
+    <thead>
+      <tr>
+        <th>Attacking type</th>
+        {{range .Members}}<th>{{.Name}}</th>{{end}}
+        <th>Weak</th><th>Resist</th><th>Immune</th><th>DefGap</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Coverage}}
+      <tr>
+        <th><span class="type type-{{.Type}}">{{.Type}}</span></th>
+        {{range .Cells}}<td class="{{.Class}}">{{.Label}}</td>{{end}}
+        <td>{{if .Weak}}{{.Weak}}{{end}}</td>
+        <td>{{if .Resist}}{{.Resist}}{{end}}</td>
+        <td>{{if .Immune}}{{.Immune}}{{end}}</td>
+        <td>{{if .DefGap}}{{printf "%.2f" .DefGap}}{{end}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</section>
+{{end}}
+{{end}}

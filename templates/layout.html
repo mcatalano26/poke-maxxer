@@ -1,0 +1,91 @@
+{{define "layout"}}<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{template "title" .}}poke-maxxer</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; background: #f5f5f7; color: #1d1d1f; }
+  main { max-width: 56rem; margin: 2rem auto; padding: 0 1rem; }
+  nav { display: flex; gap: 1rem; }
+  nav a { color: inherit; }
+  nav a[aria-current] { font-weight: 700; text-decoration: none; }
+  form { display: grid; gap: .75rem; background: #fff; padding: 1rem; border-radius: .5rem; }
+  label { display: grid; gap: .25rem; font-size: .9rem; }
+  input, select, button, textarea { font: inherit; padding: .4rem .5rem; }
+  .settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .75rem; }
+  section { background: #fff; margin-top: 1rem; padding: 1rem; border-radius: .5rem; overflow-x: auto; }
+  h2 { margin: 0 0 .75rem; }
+  .hint { color: #6e6e73; font-size: .9rem; margin: 0 0 .75rem; }
+  .types { display: flex; gap: .5rem; list-style: none; padding: 0; margin: 0 0 1rem; }
+  .type { display: inline-block; padding: .2rem .7rem; border-radius: 1rem; color: #fff; text-transform: capitalize; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; }
+  th { text-align: left; font-weight: 500; padding: .3rem 0; }
+  td { text-align: right; font-variant-numeric: tabular-nums; }
+  .grid th, .grid td { padding: .3rem .5rem; border-bottom: 1px solid #e5e5ea; white-space: nowrap; }
+  .grid thead th { font-size: .85rem; color: #6e6e73; }
+  .grid .types { margin: 0; }
+  .grid .type { font-size: .8rem; padding: .1rem .5rem; }
+  .coverage td { text-align: center; min-width: 2.5rem; }
+  .m0 { background: #3a3a3c; color: #fff; }
+  .m25 { background: #1e8e3e; color: #fff; }
+  .m50 { background: #a8dab5; }
+  .m200 { background: #f6aea9; }
+  .m400 { background: #c5221f; color: #fff; }
+  .error { color: #b00020; }
+  .type-normal { background: #9fa19f; } .type-fighting { background: #ff8000; }
+  .type-flying { background: #81b9ef; } .type-poison { background: #9141cb; }
+  .type-ground { background: #915121; } .type-rock { background: #afa981; }
+  .type-bug { background: #91a119; } .type-ghost { background: #704170; }
+  .type-steel { background: #60a1b8; } .type-fire { background: #e62829; }
+  .type-water { background: #2980ef; } .type-grass { background: #3fa129; }
+  .type-electric { background: #fac000; } .type-psychic { background: #ef4179; }
+  .type-ice { background: #3dcef3; } .type-dragon { background: #5060e1; }
+  .type-dark { background: #624d4e; } .type-fairy { background: #ef70ef; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <a href="/"{{if eq .Page "lookup"}} aria-current="page"{{end}}>Lookup</a>
+  <a href="/team"{{if eq .Page "team"}} aria-current="page"{{end}}>Team</a>
+</nav>
+<h1>poke-maxxer</h1>
+{{template "content" .}}
+</main>
+</body>
+</html>
+{{end}}
+
+{{define "settings"}}
+<div class="settings">
+  <label>Pokémon types
+    <select name="types">
+      <option value="original"{{if not .Options.ModernTypes}} selected{{end}}>Original</option>
+      <option value="modern"{{if .Options.ModernTypes}} selected{{end}}>Modern</option>
+    </select>
+  </label>
+  <label>Fairy type
+    <select name="fairy">
+      <option value="off"{{if not .Options.FairyTypes}} selected{{end}}>Off</option>
+      <option value="on"{{if .Options.FairyTypes}} selected{{end}}>On</option>
+    </select>
+  </label>
+  <label>Pokémon stats
+    <select name="stats">
+      <option value="original"{{if not .Options.ModernStats}} selected{{end}}>Original</option>
+      <option value="modern"{{if .Options.ModernStats}} selected{{end}}>Modern</option>
+    </select>
+  </label>
+  {{if eq .Page "team"}}
+  <label>Effectiveness
+    <select name="chart">
+      <option value="gen6"{{if not .Options.ModernTypeChart}} selected{{end}}>Gen VI</option>
+      <option value="modern"{{if .Options.ModernTypeChart}} selected{{end}}>Modern</option>
+    </select>
+  </label>
+  {{end}}
+</div>
+{{end}}
+
+{{define "types"}}<ul class="types">{{range .}}<li class="type type-{{.}}">{{.}}</li>{{end}}</ul>{{end}}

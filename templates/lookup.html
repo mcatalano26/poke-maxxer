@@ -1,0 +1,30 @@
+{{define "title"}}{{with .Result}}{{.Name}} · {{end}}{{end}}
+
+{{define "content"}}
+<form method="get" action="/">
+  <label>Pokémon
+    <input name="name" list="pokemon-names" value="{{.Query}}" required autofocus autocomplete="off">
+  </label>
+  <datalist id="pokemon-names">{{range .Names}}<option value="{{.}}">{{end}}</datalist>
+  {{template "settings" .}}
+  <button type="submit">Look up</button>
+</form>
+{{if .NotFound}}<section><p class="error">No Pokémon named “{{.Query}}” in Modern Emerald.</p></section>{{end}}
+{{with .Result}}
+<section>
+  <h2>{{.Name}}</h2>
+  {{template "types" .Types}}
+  <table>
+    <tbody>
+      <tr><th>HP</th><td>{{.Stats.HP}}</td></tr>
+      <tr><th>Attack</th><td>{{.Stats.Attack}}</td></tr>
+      <tr><th>Defense</th><td>{{.Stats.Defense}}</td></tr>
+      <tr><th>Sp. Atk</th><td>{{.Stats.SpAttack}}</td></tr>
+      <tr><th>Sp. Def</th><td>{{.Stats.SpDefense}}</td></tr>
+      <tr><th>Speed</th><td>{{.Stats.Speed}}</td></tr>
+      <tr><th><strong>Total</strong></th><td><strong>{{.Stats.Total}}</strong></td></tr>
+    </tbody>
+  </table>
+</section>
+{{end}}
+{{end}}

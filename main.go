@@ -1,10 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
+
+	"poke-maxxer/pokedata"
 )
 
 func main() {
@@ -14,10 +15,16 @@ func main() {
 	}
 	addr := "localhost:" + port
 
+	dex, err := pokedata.Load()
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf("loaded %d Pokémon, %d evolutions, %d types", len(dex.Pokemon), len(dex.Evolutions), len(dex.Types))
+
 	mux := http.NewServeMux()
-	mux.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "hello from poke-maxxer")
-	})
+	a := newApp(dex)
+	mux.HandleFunc("GET /{$}", a.lookup)
+	mux.HandleFunc("GET /team", a.team)
 
 	log.Printf("poke-maxxer listening on http://%s", addr)
 	log.Fatal(http.ListenAndServe(addr, mux))

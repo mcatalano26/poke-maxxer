@@ -1,0 +1,1294 @@
+{
+  "source": {
+    "repo": "https://github.com/resetes12/pokeemerald",
+    "commit": "67f2cc43d2a5e6112e6cfc477e7ef75d78e2a46b"
+  },
+  "evolutions": [
+    {
+      "from": "bulbasaur",
+      "into": "ivysaur",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "ivysaur",
+      "into": "venusaur",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "charmander",
+      "into": "charmeleon",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "charmeleon",
+      "into": "charizard",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "squirtle",
+      "into": "wartortle",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "wartortle",
+      "into": "blastoise",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "caterpie",
+      "into": "metapod",
+      "method": "level",
+      "level": 7
+    },
+    {
+      "from": "metapod",
+      "into": "butterfree",
+      "method": "level",
+      "level": 10
+    },
+    {
+      "from": "weedle",
+      "into": "kakuna",
+      "method": "level",
+      "level": 7
+    },
+    {
+      "from": "kakuna",
+      "into": "beedrill",
+      "method": "level",
+      "level": 10
+    },
+    {
+      "from": "pidgey",
+      "into": "pidgeotto",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "pidgeotto",
+      "into": "pidgeot",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "rattata",
+      "into": "raticate",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "spearow",
+      "into": "fearow",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "ekans",
+      "into": "arbok",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "from": "pikachu",
+      "into": "raichu",
+      "method": "item",
+      "item": "ThunderStone"
+    },
+    {
+      "from": "sandshrew",
+      "into": "sandslash",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "from": "nidoran-f",
+      "into": "nidorina",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "nidorina",
+      "into": "nidoqueen",
+      "method": "item",
+      "item": "Moon Stone"
+    },
+    {
+      "from": "nidoran-m",
+      "into": "nidorino",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "nidorino",
+      "into": "nidoking",
+      "method": "item",
+      "item": "Moon Stone"
+    },
+    {
+      "from": "clefairy",
+      "into": "clefable",
+      "method": "item",
+      "item": "Moon Stone"
+    },
+    {
+      "from": "vulpix",
+      "into": "ninetales",
+      "method": "item",
+      "item": "Fire Stone"
+    },
+    {
+      "from": "jigglypuff",
+      "into": "wigglytuff",
+      "method": "item",
+      "item": "Moon Stone"
+    },
+    {
+      "from": "zubat",
+      "into": "golbat",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "from": "golbat",
+      "into": "crobat",
+      "method": "friendship"
+    },
+    {
+      "from": "oddish",
+      "into": "gloom",
+      "method": "level",
+      "level": 21
+    },
+    {
+      "from": "gloom",
+      "into": "vileplume",
+      "method": "item",
+      "item": "Leaf Stone"
+    },
+    {
+      "from": "gloom",
+      "into": "bellossom",
+      "method": "item",
+      "item": "Sun Stone"
+    },
+    {
+      "from": "paras",
+      "into": "parasect",
+      "method": "level",
+      "level": 24
+    },
+    {
+      "from": "venonat",
+      "into": "venomoth",
+      "method": "level",
+      "level": 31
+    },
+    {
+      "from": "diglett",
+      "into": "dugtrio",
+      "method": "level",
+      "level": 26
+    },
+    {
+      "from": "meowth",
+      "into": "persian",
+      "method": "level",
+      "level": 28
+    },
+    {
+      "from": "psyduck",
+      "into": "golduck",
+      "method": "level",
+      "level": 33
+    },
+    {
+      "from": "mankey",
+      "into": "primeape",
+      "method": "level",
+      "level": 28
+    },
+    {
+      "from": "primeape",
+      "into": "annihilape",
+      "method": "level-night",
+      "level": 44
+    },
+    {
+      "from": "growlithe",
+      "into": "arcanine",
+      "method": "item",
+      "item": "Fire Stone"
+    },
+    {
+      "from": "poliwag",
+      "into": "poliwhirl",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "poliwhirl",
+      "into": "poliwrath",
+      "method": "item",
+      "item": "Water Stone"
+    },
+    {
+      "from": "poliwhirl",
+      "into": "politoed",
+      "method": "trade-item",
+      "item": "King's Rock"
+    },
+    {
+      "from": "abra",
+      "into": "kadabra",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "kadabra",
+      "into": "alakazam",
+      "method": "trade"
+    },
+    {
+      "from": "machop",
+      "into": "machoke",
+      "method": "level",
+      "level": 28
+    },
+    {
+      "from": "machoke",
+      "into": "machamp",
+      "method": "trade"
+    },
+    {
+      "from": "bellsprout",
+      "into": "weepinbell",
+      "method": "level",
+      "level": 21
+    },
+    {
+      "from": "weepinbell",
+      "into": "victreebel",
+      "method": "item",
+      "item": "Leaf Stone"
+    },
+    {
+      "from": "tentacool",
+      "into": "tentacruel",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "geodude",
+      "into": "graveler",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "graveler",
+      "into": "golem",
+      "method": "trade"
+    },
+    {
+      "from": "ponyta",
+      "into": "rapidash",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "slowpoke",
+      "into": "slowbro",
+      "method": "level",
+      "level": 37
+    },
+    {
+      "from": "slowpoke",
+      "into": "slowking",
+      "method": "trade-item",
+      "item": "King's Rock"
+    },
+    {
+      "from": "magnemite",
+      "into": "magneton",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "magneton",
+      "into": "magnezone",
+      "method": "item-hold",
+      "item": "ThunderStone"
+    },
+    {
+      "from": "doduo",
+      "into": "dodrio",
+      "method": "level",
+      "level": 31
+    },
+    {
+      "from": "seel",
+      "into": "dewgong",
+      "method": "level",
+      "level": 34
+    },
+    {
+      "from": "grimer",
+      "into": "muk",
+      "method": "level",
+      "level": 38
+    },
+    {
+      "from": "shellder",
+      "into": "cloyster",
+      "method": "item",
+      "item": "Water Stone"
+    },
+    {
+      "from": "gastly",
+      "into": "haunter",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "haunter",
+      "into": "gengar",
+      "method": "trade"
+    },
+    {
+      "from": "onix",
+      "into": "steelix",
+      "method": "trade-item",
+      "item": "Metal Coat"
+    },
+    {
+      "from": "drowzee",
+      "into": "hypno",
+      "method": "level",
+      "level": 26
+    },
+    {
+      "from": "krabby",
+      "into": "kingler",
+      "method": "level",
+      "level": 28
+    },
+    {
+      "from": "voltorb",
+      "into": "electrode",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "exeggcute",
+      "into": "exeggutor",
+      "method": "item",
+      "item": "Leaf Stone"
+    },
+    {
+      "from": "cubone",
+      "into": "marowak",
+      "method": "level",
+      "level": 28
+    },
+    {
+      "from": "lickitung",
+      "into": "lickilicky",
+      "method": "move",
+      "move": "Rollout"
+    },
+    {
+      "from": "koffing",
+      "into": "weezing",
+      "method": "level",
+      "level": 35
+    },
+    {
+      "from": "rhyhorn",
+      "into": "rhydon",
+      "method": "level",
+      "level": 42
+    },
+    {
+      "from": "rhydon",
+      "into": "rhyperior",
+      "method": "trade-item",
+      "item": "Hard Stone"
+    },
+    {
+      "from": "chansey",
+      "into": "blissey",
+      "method": "friendship"
+    },
+    {
+      "from": "tangela",
+      "into": "tangrowth",
+      "method": "move",
+      "move": "AncientPower"
+    },
+    {
+      "from": "horsea",
+      "into": "seadra",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "seadra",
+      "into": "kingdra",
+      "method": "trade-item",
+      "item": "Dragon Scale"
+    },
+    {
+      "from": "goldeen",
+      "into": "seaking",
+      "method": "level",
+      "level": 33
+    },
+    {
+      "from": "staryu",
+      "into": "starmie",
+      "method": "item",
+      "item": "Water Stone"
+    },
+    {
+      "from": "scyther",
+      "into": "scizor",
+      "method": "trade-item",
+      "item": "Metal Coat"
+    },
+    {
+      "from": "electabuzz",
+      "into": "electivire",
+      "method": "item",
+      "item": "ThunderStone"
+    },
+    {
+      "from": "magmar",
+      "into": "magmortar",
+      "method": "item",
+      "item": "Fire Stone"
+    },
+    {
+      "from": "magikarp",
+      "into": "gyarados",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "eevee",
+      "into": "jolteon",
+      "method": "item",
+      "item": "ThunderStone"
+    },
+    {
+      "from": "eevee",
+      "into": "vaporeon",
+      "method": "item",
+      "item": "Water Stone"
+    },
+    {
+      "from": "eevee",
+      "into": "flareon",
+      "method": "item",
+      "item": "Fire Stone"
+    },
+    {
+      "from": "eevee",
+      "into": "espeon",
+      "method": "friendship-day"
+    },
+    {
+      "from": "eevee",
+      "into": "umbreon",
+      "method": "friendship-night"
+    },
+    {
+      "from": "eevee",
+      "into": "leafeon",
+      "method": "item-hold",
+      "item": "Leaf Stone"
+    },
+    {
+      "from": "eevee",
+      "into": "glaceon",
+      "method": "item-hold",
+      "item": "Water Stone"
+    },
+    {
+      "from": "eevee",
+      "into": "sylveon",
+      "method": "item-hold",
+      "item": "Heart Scale"
+    },
+    {
+      "from": "porygon",
+      "into": "porygon2",
+      "method": "trade-item",
+      "item": "Up-Grade"
+    },
+    {
+      "from": "omanyte",
+      "into": "omastar",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "kabuto",
+      "into": "kabutops",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "dratini",
+      "into": "dragonair",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "dragonair",
+      "into": "dragonite",
+      "method": "level",
+      "level": 55
+    },
+    {
+      "from": "chikorita",
+      "into": "bayleef",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "bayleef",
+      "into": "meganium",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "cyndaquil",
+      "into": "quilava",
+      "method": "level",
+      "level": 14
+    },
+    {
+      "from": "quilava",
+      "into": "typhlosion",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "totodile",
+      "into": "croconaw",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "croconaw",
+      "into": "feraligatr",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "sentret",
+      "into": "furret",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "from": "hoothoot",
+      "into": "noctowl",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "ledyba",
+      "into": "ledian",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "spinarak",
+      "into": "ariados",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "from": "chinchou",
+      "into": "lanturn",
+      "method": "level",
+      "level": 27
+    },
+    {
+      "from": "pichu",
+      "into": "pikachu",
+      "method": "friendship"
+    },
+    {
+      "from": "cleffa",
+      "into": "clefairy",
+      "method": "friendship"
+    },
+    {
+      "from": "igglybuff",
+      "into": "jigglypuff",
+      "method": "friendship"
+    },
+    {
+      "from": "togepi",
+      "into": "togetic",
+      "method": "friendship"
+    },
+    {
+      "from": "togetic",
+      "into": "togekiss",
+      "method": "item-hold-day",
+      "item": "Heart Scale"
+    },
+    {
+      "from": "natu",
+      "into": "xatu",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "mareep",
+      "into": "flaaffy",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "from": "flaaffy",
+      "into": "ampharos",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "marill",
+      "into": "azumarill",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "hoppip",
+      "into": "skiploom",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "skiploom",
+      "into": "jumpluff",
+      "method": "level",
+      "level": 27
+    },
+    {
+      "from": "aipom",
+      "into": "ambipom",
+      "method": "move",
+      "move": "Tickle"
+    },
+    {
+      "from": "sunkern",
+      "into": "sunflora",
+      "method": "item",
+      "item": "Sun Stone"
+    },
+    {
+      "from": "yanma",
+      "into": "yanmega",
+      "method": "move",
+      "move": "AncientPower"
+    },
+    {
+      "from": "wooper",
+      "into": "quagsire",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "murkrow",
+      "into": "honchkrow",
+      "method": "level-night",
+      "level": 30
+    },
+    {
+      "from": "misdreavus",
+      "into": "mismagius",
+      "method": "item-hold-night",
+      "item": "Spell Tag"
+    },
+    {
+      "from": "pineco",
+      "into": "forretress",
+      "method": "level",
+      "level": 31
+    },
+    {
+      "from": "gligar",
+      "into": "gliscor",
+      "method": "level-night",
+      "level": 36
+    },
+    {
+      "from": "snubbull",
+      "into": "granbull",
+      "method": "level",
+      "level": 23
+    },
+    {
+      "from": "sneasel",
+      "into": "weavile",
+      "method": "level-night",
+      "level": 35
+    },
+    {
+      "from": "teddiursa",
+      "into": "ursaring",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "slugma",
+      "into": "magcargo",
+      "method": "level",
+      "level": 38
+    },
+    {
+      "from": "swinub",
+      "into": "piloswine",
+      "method": "level",
+      "level": 33
+    },
+    {
+      "from": "piloswine",
+      "into": "mamoswine",
+      "method": "move",
+      "move": "AncientPower"
+    },
+    {
+      "from": "remoraid",
+      "into": "octillery",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "houndour",
+      "into": "houndoom",
+      "method": "level",
+      "level": 24
+    },
+    {
+      "from": "phanpy",
+      "into": "donphan",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "porygon2",
+      "into": "porygon-z",
+      "method": "trade-item",
+      "item": "Up-Grade"
+    },
+    {
+      "from": "tyrogue",
+      "into": "hitmonchan",
+      "method": "level-atk-lt-def",
+      "level": 20
+    },
+    {
+      "from": "tyrogue",
+      "into": "hitmonlee",
+      "method": "level-atk-gt-def",
+      "level": 20
+    },
+    {
+      "from": "tyrogue",
+      "into": "hitmontop",
+      "method": "level-atk-eq-def",
+      "level": 20
+    },
+    {
+      "from": "smoochum",
+      "into": "jynx",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "elekid",
+      "into": "electabuzz",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "magby",
+      "into": "magmar",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "larvitar",
+      "into": "pupitar",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "pupitar",
+      "into": "tyranitar",
+      "method": "level",
+      "level": 55
+    },
+    {
+      "from": "treecko",
+      "into": "grovyle",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "grovyle",
+      "into": "sceptile",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "torchic",
+      "into": "combusken",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "combusken",
+      "into": "blaziken",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "mudkip",
+      "into": "marshtomp",
+      "method": "level",
+      "level": 16
+    },
+    {
+      "from": "marshtomp",
+      "into": "swampert",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "poochyena",
+      "into": "mightyena",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "zigzagoon",
+      "into": "linoone",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "wurmple",
+      "into": "silcoon",
+      "method": "level-silcoon",
+      "level": 7
+    },
+    {
+      "from": "wurmple",
+      "into": "cascoon",
+      "method": "level-cascoon",
+      "level": 7
+    },
+    {
+      "from": "silcoon",
+      "into": "beautifly",
+      "method": "level",
+      "level": 10
+    },
+    {
+      "from": "cascoon",
+      "into": "dustox",
+      "method": "level",
+      "level": 10
+    },
+    {
+      "from": "lotad",
+      "into": "lombre",
+      "method": "level",
+      "level": 14
+    },
+    {
+      "from": "lombre",
+      "into": "ludicolo",
+      "method": "item",
+      "item": "Water Stone"
+    },
+    {
+      "from": "seedot",
+      "into": "nuzleaf",
+      "method": "level",
+      "level": 14
+    },
+    {
+      "from": "nuzleaf",
+      "into": "shiftry",
+      "method": "item",
+      "item": "Leaf Stone"
+    },
+    {
+      "from": "nincada",
+      "into": "ninjask",
+      "method": "level-ninjask",
+      "level": 20
+    },
+    {
+      "from": "nincada",
+      "into": "shedinja",
+      "method": "level-shedinja",
+      "level": 20
+    },
+    {
+      "from": "taillow",
+      "into": "swellow",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "from": "shroomish",
+      "into": "breloom",
+      "method": "level",
+      "level": 23
+    },
+    {
+      "from": "wingull",
+      "into": "pelipper",
+      "method": "level",
+      "level": 25
+    },
+    {
+      "from": "surskit",
+      "into": "masquerain",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "from": "wailmer",
+      "into": "wailord",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "skitty",
+      "into": "delcatty",
+      "method": "item",
+      "item": "Moon Stone"
+    },
+    {
+      "from": "baltoy",
+      "into": "claydol",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "nosepass",
+      "into": "probopass",
+      "method": "item-hold",
+      "item": "ThunderStone"
+    },
+    {
+      "from": "barboach",
+      "into": "whiscash",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "corphish",
+      "into": "crawdaunt",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "feebas",
+      "into": "milotic",
+      "method": "beauty",
+      "beauty": 170
+    },
+    {
+      "from": "carvanha",
+      "into": "sharpedo",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "trapinch",
+      "into": "vibrava",
+      "method": "level",
+      "level": 35
+    },
+    {
+      "from": "vibrava",
+      "into": "flygon",
+      "method": "level",
+      "level": 45
+    },
+    {
+      "from": "makuhita",
+      "into": "hariyama",
+      "method": "level",
+      "level": 24
+    },
+    {
+      "from": "electrike",
+      "into": "manectric",
+      "method": "level",
+      "level": 26
+    },
+    {
+      "from": "numel",
+      "into": "camerupt",
+      "method": "level",
+      "level": 33
+    },
+    {
+      "from": "spheal",
+      "into": "sealeo",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "sealeo",
+      "into": "walrein",
+      "method": "level",
+      "level": 44
+    },
+    {
+      "from": "cacnea",
+      "into": "cacturne",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "snorunt",
+      "into": "glalie",
+      "method": "level",
+      "level": 42
+    },
+    {
+      "from": "snorunt",
+      "into": "froslass",
+      "method": "level-female-morning",
+      "level": 42
+    },
+    {
+      "from": "azurill",
+      "into": "marill",
+      "method": "friendship"
+    },
+    {
+      "from": "spoink",
+      "into": "grumpig",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "meditite",
+      "into": "medicham",
+      "method": "level",
+      "level": 37
+    },
+    {
+      "from": "swablu",
+      "into": "altaria",
+      "method": "level",
+      "level": 35
+    },
+    {
+      "from": "wynaut",
+      "into": "wobbuffet",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "from": "duskull",
+      "into": "dusclops",
+      "method": "level",
+      "level": 37
+    },
+    {
+      "from": "dusclops",
+      "into": "dusknoir",
+      "method": "trade-item",
+      "item": "Spell Tag"
+    },
+    {
+      "from": "roselia",
+      "into": "roserade",
+      "method": "beauty",
+      "beauty": 70
+    },
+    {
+      "from": "slakoth",
+      "into": "vigoroth",
+      "method": "level",
+      "level": 18
+    },
+    {
+      "from": "vigoroth",
+      "into": "slaking",
+      "method": "level",
+      "level": 36
+    },
+    {
+      "from": "gulpin",
+      "into": "swalot",
+      "method": "level",
+      "level": 26
+    },
+    {
+      "from": "whismur",
+      "into": "loudred",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "loudred",
+      "into": "exploud",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "clamperl",
+      "into": "huntail",
+      "method": "trade-item",
+      "item": "DeepSeaTooth"
+    },
+    {
+      "from": "clamperl",
+      "into": "gorebyss",
+      "method": "trade-item",
+      "item": "DeepSeaScale"
+    },
+    {
+      "from": "shuppet",
+      "into": "banette",
+      "method": "level",
+      "level": 37
+    },
+    {
+      "from": "aron",
+      "into": "lairon",
+      "method": "level",
+      "level": 32
+    },
+    {
+      "from": "lairon",
+      "into": "aggron",
+      "method": "level",
+      "level": 42
+    },
+    {
+      "from": "lileep",
+      "into": "cradily",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "anorith",
+      "into": "armaldo",
+      "method": "level",
+      "level": 40
+    },
+    {
+      "from": "ralts",
+      "into": "kirlia",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "kirlia",
+      "into": "gardevoir",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "kirlia",
+      "into": "gallade",
+      "method": "level-male-morning",
+      "level": 30
+    },
+    {
+      "from": "bagon",
+      "into": "shelgon",
+      "method": "level",
+      "level": 30
+    },
+    {
+      "from": "shelgon",
+      "into": "salamence",
+      "method": "level",
+      "level": 50
+    },
+    {
+      "from": "beldum",
+      "into": "metang",
+      "method": "level",
+      "level": 20
+    },
+    {
+      "from": "metang",
+      "into": "metagross",
+      "method": "level",
+      "level": 45
+    },
+    {
+      "from": "bonsly",
+      "into": "sudowoodo",
+      "method": "move",
+      "move": "Mimic"
+    },
+    {
+      "from": "budew",
+      "into": "roselia",
+      "method": "friendship"
+    },
+    {
+      "from": "chingling",
+      "into": "chimecho",
+      "method": "friendship-night"
+    },
+    {
+      "from": "happiny",
+      "into": "chansey",
+      "method": "item-hold-day",
+      "item": "Lucky Egg"
+    },
+    {
+      "from": "mantyke",
+      "into": "mantine",
+      "method": "move",
+      "move": "Water Pulse"
+    },
+    {
+      "from": "mime-jr",
+      "into": "mr-mime",
+      "method": "move",
+      "move": "Mimic"
+    },
+    {
+      "from": "munchlax",
+      "into": "snorlax",
+      "method": "friendship"
+    },
+    {
+      "from": "girafarig",
+      "into": "farigiraf",
+      "method": "move",
+      "move": "Signal Beam"
+    },
+    {
+      "from": "dunsparce",
+      "into": "dudunsparce",
+      "method": "move",
+      "move": "Drill Peck"
+    }
+  ]
+}
